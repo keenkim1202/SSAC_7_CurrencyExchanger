@@ -19,7 +19,7 @@ struct ExchangeRate {
   
   var USD: Double {
     willSet {
-      print("USD willSet - 환전 금액: USD:\(newValue * currencyRate)딜러로 환전될 예정")
+      print("USD willSet - 환전 금액: USD:\(newValue)달러로 환전될 예정")
     }
     didSet {
       print("USD didSet - KRW: \(KRW)원 -> \(round(USD * 100) / 100)달러로 환전되었음")
